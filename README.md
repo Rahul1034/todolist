@@ -50,7 +50,7 @@ cd TodoApp
 Install dependencies:
 
 npm install
-
+npm start
 
 Run the app:
 
