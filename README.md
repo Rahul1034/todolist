@@ -31,7 +31,6 @@ Ensuring the app was responsive across different screen sizes required detailed 
 4. Handling Dynamic Data
 Implementing features to add, edit, and delete tasks and categories dynamically required careful management of React's state and handling user inputs correctly.
 
-Getting Started
 
 Prerequisites
 
