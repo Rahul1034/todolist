@@ -1,20 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {Provider} from 'react-redux';
+import Route from './src/navigations/Route';
+import store from './src/redux/store';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+if (__DEV__) {
+  require('./ReactotronConfig');
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+  return (
+    <Provider store={store}>
+    <View style={{flex: 1}}>
+      <Route />
+    </View>
+    </Provider>
+  );
+};
+
+export default App;
+
+const styles = StyleSheet.create({});
