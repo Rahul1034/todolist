@@ -49,7 +49,8 @@ cd TodoApp
 Install dependencies:
 
 npm install
-npm start
+
+npx expo start
 
 Run the app:
 
